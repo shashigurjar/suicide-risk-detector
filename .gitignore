@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.pkl
+*.h5
+*.keras
+*.zip
+*.log
+.env
+venv/
+node_modules/
+build/
+dist/

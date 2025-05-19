@@ -1,0 +1,54 @@
+.prevention-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: max;
+    align-items: center;
+    padding: 0.8rem;
+    margin: 1rem 0.5rem;
+    color: white;
+    border: 1px solid black;
+    border-radius: 12px;
+    background-color: #000000;
+  }
+
+  .prevention-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .image-container {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .prevention-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .content-container {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .prevention-heading {
+    font-size: 45px;
+    margin-bottom: 40px;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .prevention-list {
+    list-style: none;
+    padding: 0;
+    line-height: 1.8;
+    font-size: 20px;
+  }
+  

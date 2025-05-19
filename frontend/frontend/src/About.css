@@ -1,0 +1,158 @@
+.about-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #1D2026;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  border: 1px solid #eee;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-content h2{
+  color: #4299e1;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #4299e1;
+  margin-bottom: 1.5rem;
+}
+
+.section-divider {
+  width: 60px;
+  height: 3px;
+  background: #4299e1;
+  margin: 1rem auto 2rem;
+}
+
+.intro-text {
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: white;
+  margin-bottom: 2.5rem;
+}
+
+.highlight {
+  color: #4299e1;
+  font-weight: 600;
+}
+
+.info-card {
+  background: #f0f5f4;
+  padding: 2rem;
+  border-radius: 12px;
+  margin: 2rem 0;
+}
+
+h3 {
+  color: white;
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.process-list li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.icon-box {
+  background: #4299e1;
+  color: white;
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.list-content {
+  color: #4a5568;
+  line-height: 1.7;
+}
+
+.tech {
+  color: #4299e1;
+  font-weight: 500;
+}
+
+.tech-stack {
+  margin: 3rem 0;
+}
+.tech-stack h3{
+  color: #4299e1;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.tech-item {
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: 500;
+  background: #f8fafc;
+}
+
+.tech-item.frontend { border-left: 4px solid #4299e1; }
+.tech-item.backend { border-left: 4px solid #48bb78; }
+.tech-item.ml { border-left: 4px solid #f56565; }
+.tech-item.data { border-left: 4px solid #9f7aea; }
+
+.disclaimer-card {
+  background: #fff4f4;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #fed7d7;
+  margin-top: 2rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.warning-icon {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  color: #f56565;
+}
+
+code {
+  background: #f8fafc;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: 'Fira Code', monospace;
+  color: #2d3748;
+  border: 1px solid #e2e8f0;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+  }
+  
+  .tech-grid {
+    grid-template-columns: 1fr;
+  }
+}

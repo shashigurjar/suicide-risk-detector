@@ -1,0 +1,81 @@
+2025-04-14 23:58:50,121 - app - ERROR - Failed to load ML model: [Errno 2] Unable to synchronously open file (unable to open file: name = 'my_model.h5', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)
+2025-04-14 23:58:50,121 - app - ERROR - Traceback (most recent call last):
+  File "c:\Users\shash\OneDrive\Desktop\Mission\backend\app.py", line 30, in load_ml_model
+    model = load_model('my_model.h5')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shash\AppData\Roaming\Python\Python312\site-packages\keras\src\saving\saving_api.py", line 196, in load_model
+    return legacy_h5_format.load_model_from_hdf5(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shash\AppData\Roaming\Python\Python312\site-packages\keras\src\legacy\saving\legacy_h5_format.py", line 116, in load_model_from_hdf5
+    f = h5py.File(filepath, mode="r")
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shash\AppData\Roaming\Python\Python312\site-packages\h5py\_hl\files.py", line 564, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shash\AppData\Roaming\Python\Python312\site-packages\h5py\_hl\files.py", line 238, in make_fid
+    fid = h5f.open(name, flags, fapl=fapl)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "h5py\\_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py\\_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py\\h5f.pyx", line 102, in h5py.h5f.open
+FileNotFoundError: [Errno 2] Unable to synchronously open file (unable to open file: name = 'my_model.h5', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)
+
+2025-04-14 23:58:50,121 - app - CRITICAL - Application failed to start due to model loading error
+2025-04-14 23:58:53,885 - app - ERROR - Failed to load ML model: [Errno 2] Unable to synchronously open file (unable to open file: name = 'my_model.h5', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)
+2025-04-14 23:58:53,885 - app - ERROR - Traceback (most recent call last):
+  File "c:\Users\shash\OneDrive\Desktop\Mission\backend\app.py", line 30, in load_ml_model
+    model = load_model('my_model.h5')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shash\AppData\Roaming\Python\Python312\site-packages\keras\src\saving\saving_api.py", line 196, in load_model
+    return legacy_h5_format.load_model_from_hdf5(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shash\AppData\Roaming\Python\Python312\site-packages\keras\src\legacy\saving\legacy_h5_format.py", line 116, in load_model_from_hdf5
+    f = h5py.File(filepath, mode="r")
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shash\AppData\Roaming\Python\Python312\site-packages\h5py\_hl\files.py", line 564, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shash\AppData\Roaming\Python\Python312\site-packages\h5py\_hl\files.py", line 238, in make_fid
+    fid = h5f.open(name, flags, fapl=fapl)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "h5py\\_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py\\_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py\\h5f.pyx", line 102, in h5py.h5f.open
+FileNotFoundError: [Errno 2] Unable to synchronously open file (unable to open file: name = 'my_model.h5', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)
+
+2025-04-14 23:58:53,885 - app - CRITICAL - Application failed to start due to model loading error
+2025-04-15 00:00:23,727 - app - ERROR - Unexpected error during prediction: 'NoneType' object has no attribute 'predict'
+2025-04-15 00:00:23,727 - app - ERROR - Traceback (most recent call last):
+  File "c:\Users\shash\OneDrive\Desktop\Mission\backend\app.py", line 80, in predict
+    prediction = model.predict(processed_text)
+                 ^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'predict'
+
+2025-04-15 00:37:41,841 - app - ERROR - Failed to load ML model: [Errno 2] Unable to synchronously open file (unable to open file: name = 'my_model.h5', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)
+2025-04-15 00:37:41,841 - app - ERROR - Traceback (most recent call last):
+  File "c:\Users\shash\OneDrive\Desktop\Mission\backend\app.py", line 30, in load_ml_model
+  File "C:\Users\shash\AppData\Roaming\Python\Python312\site-packages\keras\src\saving\saving_api.py", line 196, in load_model
+    return legacy_h5_format.load_model_from_hdf5(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shash\AppData\Roaming\Python\Python312\site-packages\keras\src\legacy\saving\legacy_h5_format.py", line 116, in load_model_from_hdf5
+    f = h5py.File(filepath, mode="r")
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shash\AppData\Roaming\Python\Python312\site-packages\h5py\_hl\files.py", line 564, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shash\AppData\Roaming\Python\Python312\site-packages\h5py\_hl\files.py", line 238, in make_fid
+    fid = h5f.open(name, flags, fapl=fapl)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "h5py\\_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py\\_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py\\h5f.pyx", line 102, in h5py.h5f.open
+FileNotFoundError: [Errno 2] Unable to synchronously open file (unable to open file: name = 'my_model.h5', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)
+
+2025-04-15 00:37:41,841 - app - CRITICAL - Application failed to start due to model loading error
+2025-05-19 15:44:29,316 - app - INFO - Loading model...
+2025-05-19 15:44:30,825 - app - INFO - Model loaded. Input shape: (None, 40)
+2025-05-19 15:44:30,827 - app - INFO - Loading tokenizer...
+2025-05-19 15:44:31,050 - app - INFO - Tokenizer loaded successfully
+2025-05-19 15:44:31,051 - app - INFO - Loading sentiment analyzer...
+2025-05-19 15:44:53,402 - app - CRITICAL - Resource loading failed: We couldn't connect to 'https://huggingface.co' to load the files, and couldn't find them in the cached files.
+Checkout your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'.
