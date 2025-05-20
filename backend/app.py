@@ -211,7 +211,7 @@ def health_check():
         }), 500
 
 # Load resources after defining all components
-#load_resources()
+load_resources()
 
 if __name__ == '__main__':
     app.logger.info("Starting Suicide Risk Assessment API")
