@@ -215,3 +215,4 @@ load_resources()
 
 if __name__ == '__main__':
     app.logger.info("Starting Suicide Risk Assessment API")
+    app.run(host='0.0.0.0', port=5000)

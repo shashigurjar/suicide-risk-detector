@@ -15,8 +15,6 @@ function App() {
       <HeroSection change = {setShow}></HeroSection>
       <PreventionSection></PreventionSection>
       <About></About>
-      
-      
     </div>}
     </>
       
