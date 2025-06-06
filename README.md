@@ -1,19 +1,19 @@
-# 🧠 Suicide Risk Detector
+#  Suicide Risk Detector
 
 A web-based AI application that analyzes user-submitted text to detect signs of suicidal intent using a machine learning model. The app predicts whether the text is **suicidal** or **not suicidal**, along with a risk level assessment (e.g., NONE, HIGH). Designed for awareness, not diagnosis.
 
 ---
 
-## 🚀 Features
+##  Features
 
-- 🔍 Real-time suicide risk detection from text input.
-- 🤖 Backend powered by a trained deep learning model (.h5).
-- 🖥️ Clean and intuitive React frontend.
-- ⚡ Instant feedback on risk level: `NONE`, `MODERATE`, `HIGH`.
+-  Real-time suicide risk detection from text input.
+-  Backend powered by a trained deep learning model (.h5).
+-  Clean and intuitive React frontend.
+-  Instant feedback on risk level: `NONE`, `MODERATE`, `HIGH`.
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Layer      | Tech                       |
 |------------|----------------------------|
@@ -24,7 +24,7 @@ A web-based AI application that analyzes user-submitted text to detect signs of 
 
 ---
 
-## ⚙️ Local Setup
+##  Local Setup
 
 ### 1. Clone the repo
 
@@ -47,7 +47,7 @@ npm install
 npm start
 ```
 ---
-## 🧠 Model Info
+##  Model Info
 
 - Trained on a labeled dataset of suicidal vs non-suicidal text.
 - Uses Keras/TensorFlow and saved as model.h5.
@@ -55,23 +55,23 @@ npm start
   
 ---
 
-## ⚠️ Disclaimer
+##  Disclaimer
 
 This tool is not a replacement for professional mental health care. It is designed for awareness and educational purposes only. If you or someone you know is struggling, please contact a mental health professional or suicide prevention hotline.
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Pull requests and suggestions are welcome! For major changes, please open an issue first.
 
 ---
-## 📬 Contact
+##  Contact
 
 Shashank Gurjar
 - 🔗 GitHub: [shashigurjar](https://github.com/shashigurjar)
 
 ---
-## ⭐️ Support
+##  Support
 
 If you found this useful, please consider giving it a ⭐️ on GitHub.
